@@ -3,9 +3,20 @@ body {
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
   }
+a {
+	color: #007bff; /* Change link color to blue */
+	text-decoration: none; /* Remove default underline */
+	transition: color 0.2s ease-in-out; /* Add smooth transition on hover */
+  }
+  
+a:hover {
+	color: #0056b3; /* Change link color on hover */
+	text-decoration: underline; /* Add underline on hover */
+  }
+  
 
   .content {
-	  padding: 10px;
+	  padding: 10px 40px;
   }
   .p{
 	  text-align: justify;
@@ -13,7 +24,7 @@ body {
   
   .header {
 	 background-color: #f1f1f1; 
-	padding: 15px 10px;
+	padding: 15px 40px;
 	text-align: center;
   }
   
@@ -21,7 +32,7 @@ body {
   overflow: hidden;
    /*background-color: white;*/
    background-color: #f1f1f1;
-  padding: 12px 10px;
+  padding: 12px 40px;
   }
 
   .navbar a {
@@ -68,6 +79,15 @@ body {
   transition: top 0.7s;
   }
 @media screen and (max-width: 700px) {
+.content{
+	padding: 10px 20px;
+}
+.header{
+	padding: 15px 20px;
+}
+.navbar{
+	padding: 10px 20px;
+}
   .big-screen{
 	  display: none;
   }
@@ -78,7 +98,7 @@ body {
 }
 
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 550px) {
 .navbar a {
   float: none;
   display: block;
@@ -87,6 +107,15 @@ body {
 }
 .small-screen{
   display: block;
+}
+.content{
+	padding: 10px 20px;
+}
+.header{
+	padding: 15px 20px;
+}
+.navbar{
+	padding: 5px 20px;
 }
 
 
