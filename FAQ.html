@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<!-- Bootstrap CSS CDN -->
+
+
+
+<style>
+	
+
+</style>
+
+
+</head>
+<body>
+
+<div class="header">
+	<div class="card">
+		<div class="card-body">
+  <h2 class="big-screen">Peking Algebraic Combinatorics Experience</h2>
+  <h3 class="mid-screen"> Peking Algebraic Combinatorics Experience </h3>
+  <h3 class="small-screen"> P A C E </h3>
+</div>
+</div>
+  
+</div>
+
+
+<nav id = "navbar" class="navbar" style="position: sticky">
+	<div class="navbar-left">
+		<a href="/index.html"> Home </a>
+		<a href="/PACE2023.html"> Current Program </a>
+		<a class="active"> FAQ </a>
+	</div>
+</nav>
+<!-- How to add some gaps between the navbar buttons?-->
+
+<div class="content">
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h1>
+            
+                <ul class="qa-list">
+                  <li class="qa-item">
+                    <h4 class="qa-question">我从未了解过代数组合，如何知道这个项目是否适合我？</h4>
+                    <p class="qa-answer">通常来讲对抽象代数感兴趣的同学也会喜欢代数组合。本项目会提供多个研究课题供同学们选择，同时也欢迎同学们查询导师们的详细资料以作参考。</p>
+                  </li>
+                  <li class="qa-item">
+                    <h4 class="qa-question">我在暑假要参加公司的实习，能否同时参与本项目？</h4>
+                    <p class="qa-answer">如有此类情况，请在申请邮件或个人陈述中务必告知，通常不予考虑录取。我们要求本项目的同学全程在校，短期的请假需提交申请。</p>
+                  </li>
+                  <li class="qa-item">
+                    <h4 class="qa-question">我从未参加过数学研究，对LaTeX使用不熟练，也对自己的英文写作能力没有自信，是否可以参加本项目？</h4>
+                    <p class="qa-answer">我们在审核申请的过程中不会对这几点进行考量，在本项目进行的过程中也会开展相应的课程，对编程、作报告、写作等进行培训。</p>
+                  </li>
+                  <li class="qa-item">
+                    <h4 class="qa-question">如何使我的申请更有吸引力？</h4>
+                    <p class="qa-answer">上述要求的申请材料的每一项都是重要考核标准，加分项包括但不限于：在高年级的代数课程（如交换代数，代数拓扑，代数几何）中取得好成绩，过往的研究合作经历等。</p>
+                  </li>
+                  <li class="qa-item">
+                    <h4 class="qa-question">短短两个月真的可以做数学研究吗？</h4>
+                    <p class="qa-answer">没有任何有价值的数学研究可以保证在一定时间内出成果，但我们会精心挑选适合的研究课题，同时我们也十分鼓励在项目结束后，同学与同学之间以及导师和同学之间仍然保持合作。</p>
+                  </li>
+                </ul>
+              
+                
+              
+      </div>
+</div>
+
+
+<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+		document.getElementById("navbar").style.top = "0";
+	  } else {
+		if (window.innerWidth < 521) {
+			document.getElementById("navbar").style.top = "-145px";
+		} else {
+			document.getElementById("navbar").style.top = "-80px";	
+		}
+		
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+</script>
+</body>
+</html>
