@@ -1,0 +1,68 @@
+%packagrs
+
+\usepackage{ifthen}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage{thmtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,intersections,decorations.markings,snakes}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\usetikzlibrary{patterns}
+%\usetikzlibrary{pathreplacing}
+\usepackage{tkz-graph}
+\let\SO\undefined
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{automata,positioning}
+
+\renewcommand{\l}[2]{\lambda_{#1#2}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\tei}[0]{Teichm\"uller}
+\newcommand{\calC}[0]{\mathcal{C}}
+\newcommand{\calA}[0]{\mathcal{A}}
+
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\psl}{PSL}
+\DeclareMathOperator{\rr}{\mathbb{R}}
+\DeclareMathOperator{\osp}{Osp}
+\DeclareMathOperator{\wt}{wt}
+\DeclareMathOperator{\twt}{twt}
+\DeclareMathOperator{\crs}{cross}
+\DeclareMathOperator{\ber}{Ber}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\tp}{t}
+\DeclareMathOperator{\zz}{\mathbb{Z}}
+
+\newcommand{\mb}[1]{\mathbb{#1}}
+\newcommand{\tld}[1]{\widetilde{#1}}
+%
+\newcommand{\precdot}{\prec\mathrel{\mkern-5mu}\mathrel{\cdot}}
+\makeatletter
+\newcommand{\preceqdot}{\mathrel{\mathpalette\pr@ceqd@t\relax}}
+\newcommand{\pr@ceqd@t}[2]{%
+  \begingroup
+  \sbox\z@{$#1\prec$}\sbox\tw@{$#1\preceq$}%
+  \dimen@=\dimexpr\ht\tw@-\ht\z@\relax
+  {\preceq}%
+  \mkern-5mu
+  \raisebox{\dimen@}{$\m@th#1\cdot$}%
+  \endgroup
+}
+\makeatother
+\usepackage{etoolbox}
+
+\def\SetFancyGraph {
+	\SetVertexMath
+	\GraphInit[vstyle=Art]
+	\SetUpVertex[MinSize=2pt]
+	\SetVertexLabel
+	\tikzset{VertexStyle/.style = {shape = circle,shading = ball,ball color = black,inner sep = 1.5pt}}
+	\SetUpEdge[color=black]
+	\tikzset{->-/.style={decoration={ markings, mark=at position 0.8 with {\arrow{>}}},postaction={decorate}}}
+	\tikzset{->--/.style={decoration={ markings, mark=at position 0.55 with {\arrow{>}}},postaction={decorate}}}
+}

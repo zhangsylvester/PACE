@@ -1,0 +1,34 @@
+\begin{thebibliography}{CFdF95}
+
+\bibitem[BS74]{bs74}
+Andries~E Brouwer and Alexander Schrijver.
+\newblock On the period of an operator, defined on antichains.
+\newblock {\em Stichting Mathematisch Centrum. Zuivere Wiskunde}, (ZW 24/74),
+  1974.
+
+\bibitem[CFdF95]{toggles}
+Peter~J Cameron and Dmitry~G Fon-der Flaass.
+\newblock Orbits of antichains revisited.
+\newblock {\em European Journal of Combinatorics}, 16(6):545--554, 1995.
+
+\bibitem[Duc74]{rowfirst}
+Pierre Duchet.
+\newblock Sur les hypergraphes invariants.
+\newblock {\em Discrete Mathematics}, 8(3):269--280, 1974.
+
+\bibitem[FDF93]{fon1993orbits}
+Dmitry~G Fon-Der-Flaass.
+\newblock Orbits of antichains in ranked posets.
+\newblock {\em European journal of combinatorics}, 14(1):17--22, 1993.
+
+\bibitem[Pan09]{Pan09}
+Dimitri Panyushev.
+\newblock On orbits of antichains of positive roots.
+\newblock {\em European Journal of Combinatorics}, 30:586–594, 2009.
+
+\bibitem[SW12]{prorow}
+Jessica Striker and Nathan Williams.
+\newblock Promotion and rowmotion.
+\newblock {\em European Journal of Combinatorics}, 33(8):1919--1942, 2012.
+
+\end{thebibliography}
