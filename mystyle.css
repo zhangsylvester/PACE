@@ -396,7 +396,8 @@ ul.papers{
 
 ul.papers li.details {
     list-style-type: none;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
+    padding-left:0 px;
 
 }
 
@@ -416,6 +417,10 @@ ul.papers li.details a.journal{
     display:inline-block;
     width: 250px;
     font-size: 11pt;
+}
+
+ul.papers li.hide ul li{
+    padding-left: 0 px ;
 }
 
 
@@ -572,3 +577,11 @@ a.abs-btn[aria-expanded="true"] {
 a.abs-btn[aria-expanded="true"] i {
     transform: rotate(90deg);
 } 
+
+/* language toggle */
+body.en :lang(ch) {
+    display: none;
+  }
+  body.ch :lang(en) {
+    display: none;
+  }

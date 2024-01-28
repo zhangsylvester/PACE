@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>PACE2023</title>
+    <title>PACE</title>
     <!--Logo-->
     
 
@@ -38,90 +38,134 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     
 
-
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/css/bootstrap5-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.ecmas.min.js"></script>
 </head>
 
-<body>
+<body class="en">
     <div class="wrapper">
         <div id="content" >
             <div class="card">
                 <div class="card-body">              
-                    <h2 style="text-align:center">Information for My PACE23 Students. </h2>
+                    <h2 style="text-align:center">Peking Algebraic Combinatorics Experience </h2>
+                    <h3 style="text-align:center">北京大学代数组合暑期科研</h3>
                 </div>
             </div>
-            <div class="line"></div>
-            <h5>About Me.</h5>
-            <p>张文泽 (Sylvester) swzhang@umn.edu</p>
-
-            <h5>Office hours.</h5>
-            <p>Before I arrive in Beijing on July 25th, you can find me in this <a href="https://meeting.tencent.com/p/8466857957">Tencent Meeting</a> (pw: 998877) at the following times. This will be updated momentarily. (You should try to form a group and meet with me together.)</p>
-            <!-- <p>Week of Jul 3rd to Jul 7th (北京时间).
-                <ul>
-                    <li>Tue. 8:30 pm + </li>
-                    <li>Wen. 8:30 pm +</li>
-                    <li>Thu. 8:30 pm</li>
-                    <li>Fri. TBD</li>
-                </ul>
-            </p> -->
             
+            <!-- <center>
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">BN</span>
+                    <span class="off">EN</span>
+                  </div>
+             </center> -->
+    
+
+            <div class="line"></div>
+            
+                <h3>General Information  
+                <input id="toggle-event" type="checkbox" checked data-toggle="toggle" data-size="small" data-onstyle="info" data-offstyle="info" data-on="EN" data-off="中文" data-true="en" data-false="ch" >
+                </h3>
+
+           
+            
+          
+            
+          
+            <p lang="ch">
+                代数组合是一个用组合模型研究代数结构，用代数方法解决组合问题的重要研究领域，尤其与代数几何和表示论关系紧密。其具体研究方向包含舒伯特计数演算、李群李代数的表示论、热带几何、拟阵、考科斯特群、多面体等。为激发优秀本科生科研兴趣，培养代数组合领域拔尖人才，北京国际数学研究中心将自2023年开始举办代数组合本科生暑期科研项目（PKU Algebra and Combinatorics Experience, PACE）。该活动将为有志于数学研究的优秀本科生提供浸入式的短期科研体验和长期的学习交流平台。
+            </p>
+            <p lang="en">The study of algebraic combinatorics is a significant research area that employs combinatorial models to investigate algebraic structures and utilizes algebraic methods to solve combinatorial problems. It is particularly closely related to algebraic geometry and representation theory. Specific research directions include Schubert calculus, representation theory of Lie groups and Lie algebras, tropical geometry, quasisymmetric functions, Coxeter groups, polytopes, and more. </p> 
+            
+            <p lang="en"> In order to inspire research interest among outstanding undergraduate students and cultivate top talents in the field of algebraic combinatorics, the Beijing International Mathematical Research Center will host the Algebra and Combinatorics Experience for Undergraduates (PACE) starting from 2023. This activity aims to provide immersive short-term research experiences and a long-term platform for learning and exchange for undergraduate students aspiring to engage in mathematical research.</p>
+            <p lang="en">The REU adopts a collaborative model, with over ten experts in the field providing problems for students to choose from freely and engage in group discussions. At the conclusion of the projects, each group shall publicly present their findings. Projects with significant achievements are encouraged to promptly submit their results to academic journals for publication.</p>
+            <p lang="ch">
+                本科研活动采取合作讨论的研究模式，由国内外近十名领域专家供题，学生自由选取感兴趣的项目进行小组合作讨论。项目结束时，每个课题小组需进行公开汇报展示；成果显著的课题小组可随即将成果投稿至学术期刊以及学术会议。
+            </p>
+            <ul>
+                <li>Typical REU topics</li>
+                <li>Suggested Exercises</li>
+                <li><a href="publications.html">Publication Gallery</a></li>
+                <li>Q&A</li>
+            </ul>
+
+            <div class="line"></div>
+            
+            <h3>Current REU Info</h3>
+            <p>1. 举办日期：2024年7月1日至2024年8月23日<br>
+
+                2. 举办地点：北京国际数学研究中心，线下<br>
+                
+                3. 项目语言：英语<br>
+                
+                4. 招生对象：需在2024年秋季学期仍为本科生<br>
+                
+                5. 报名截止日期：2024年4月12日<br>
+                
+                6. 招生人数：20-25人</p>
+           
     
             <div class="line"></div>
-            <h5>Problem 1: Dynamics on Trapezoid Posets</h5>
-            <ul>
-                <li><a href="Problem 1 Talk.pdf">Notes.</a> (Typos: 1. I defined the bijection $\Phi$ to be $Pro^{a+b+1}$ which is wrong. It should be $\Phi:=Pro^{a+b}$. 2. The poset I drew in the notes is the horizontal reflection of what is in the code and example. To avoid future confusion we fix the convention to be <a href="files/P1convention.jpg">this</a>, in alignment with the code and example.) </li>
-                <li><a href="PACE2023Problem1/Pace2023Problem.pdf">Problem Description.</a></li>
-                <li><a href="bijection-example.jpeg">Example of the bijection.</a></li>
-                <li><a href="Rectangle-Trapezoid-bijection.html">SageMath Code</a> for the bijection. (powered by Sage Cell.)</li>
-                <li><a href="files/P1convention.jpg">Illustration</a> of the bijection.</li>
+            <h3>Past REU Info</h3>
+            <ul class="papers">
+                <li>
+                    <strong>2023</strong> (<a href="files/Pace 2023 Schedule week 1-2.pdf">schedule</a>)
+                </li>
+                <li ><u>Mentors</u>: 高奕博 (<a href='http://faculty.bicmr.pku.edu.cn/~gaoyibo/'>Yibo Gao</a>), 范久瑜 (<a href="https://math.scu.edu.cn/info/1013/4291.htm">Neil J.Y. Fan</a>), 傅翔 (Xiang Fu), 高继扬 (<a href="https://scholar.harvard.edu/jiyanggao/home">Jiyang Gao</a>), 高诗亮 (<a href="https://sites.google.com/illinois.edu/shiliang-gao">Shiliang Gao</a>), 郭龙 (Peter L. Guo), 邱敦 (Dun Qiu), 孙慧 (<a href="https://cfc.nankai.edu.cn/sh/main.htm">Lisa H. Sun</a>), 王国亮 (<a href="https://math.bit.edu.cn/szdw/jgml/sxgcx/wgl/index.htm">David Guoliang Wang</a>), 王佳原 (<a href="https://sites.google.com/view/jiayuanwang/home">Jiayuan Wang</a>), 王星炜 (<a href="https://cfc.nankai.edu.cn/wxw/main.htm">Xingwei Wang</a>), 薛蕾 (<a href="https://www-personal.umich.edu/~leixue/">Lei Xue</a>), 张文泽 (<a href="sylvesterzhang.com">Sylvester W. Zhang</a>). </li>
+                <li ><u>Students</u>: 陈奕铭，陈芝行
+                    ，费雨缪
+                    ，付梓垚
+                    ，葛雨辰
+                    ，李鸣翀
+                    ，刘宇东
+                    ，彭也博
+                    ，彭煜琳
+                    ，宋宇林
+                    ，孙雨璇
+                    ，汤妮
+                    ，陶子杰
+                    ，王璇
+                    ，魏薇
+                    ，项泽睿
+                    ，杨皓如
+                    ，叶泽琳
+                    ，殷鹏飞
+                    ，印容名
+                    ，张宇翀
+                    ，郑云驰
+                    ，朱海。</li>
+                <li class="details">
+                    <a class="abs-btn" data-bs-toggle="collapse" href="#REU2023" role="button" aria-expanded="false" aria-controls="REU2023"> REU Projects.<i class="bi bi-caret-right-fill"></i>
+                   
+                    </a>
+                  
+                </li>
+                <li class="hide">
+                    <div class="collapse abs" id="REU2023">
+                        <div class="card card-body" >
+                            <p>
+                                <ul>
+                                    <li>Zerui Xiang and Yulin Peng worked on resolving a conjecture of Dao--Wellman--Yost-Wolff--Zhang on rowmotion orbits of $P$-partitions of rectangle and trapezoid poset, and obtained partial progress. Here's their report and final presentation. </li>
+                                    <li>Ziyao Fu, Ni Tang, and Yunchi Zheng worked on the cluster algebra of $\text{SL}_3$ character varieties. They gave combinatorial formulas for cluster variables and $F$-polynomials corresponding to Fock-Goncharov coordinates in terms of perfect matchings on $A_3$ plabic graphs. Here is their submitted FPSAC abstract and final presentation.</li>
+                                </ul>
+                            </p>
+                        </div>
+                      </div>
+                </li>
             </ul>
-            <p>References. (* suggested for student paper presentation)
-                <ul>
-                    <li>Hopkins: <a href="https://arxiv.org/pdf/2006.01568.pdf">Order polynomial product formulas and poset dynamics.</a>*</li>
-                    <li>Dao--Wellman--Yost-Wolff--Zhang: <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i2p29/pdf">Rowmotion orbits of trapezoid Posets.</a> (Just for fun, you don't need to understant it.)</li>
-                    <li>Stanley: <a href="files/stanley_two_poset_polytopes.pdf">Two Poset Polytopes.</a>* (helpful material but not strickly necessary for our project.)</li>
-                    <li>Striker--Williams: <a href="https://arxiv.org/abs/1108.1172">Promotion and Rowmotion.</a></li>
-                    <li>Striker's video: <a href="https://www.birs.ca/events/2020/5-day-workshops/20w5164/videos/watch/202010190900-Striker.html">Promotion and Rowmotion, an ocean of notions.</a> (Strongly recommended to watch)</li>
-                </ul>
-            </p>
             
-            <div class="line"></div>   
-            <h5>Problem 12: Combinatorics of Fock-Goncharov $GL_n$ Cluster variables </h5>
-            <ul>
-                <li><a href="files/Pace 12.pdf">Notes</a>.</li>
-                <li><a href="files/Sl 3 Paths.pdf">Data</a> and <a href="files/SL3 hexagon.html">Sage data</a>. (Notations should be the same.)</li>
-                <li><a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Keller's quiver mutation webapp.</a></li>
-            </ul>
-            <p>References. (* suggested for student paper presentation)
-                <ul>
-                    <li>Zelevinsky: <a href="https://www.ams.org/notices/200711/tx071101494p.pdf">What is ... a cluster algebra?</a> (A very friendly and short introduction to cluster algebras).</li>
-                    <li>Glick-Rupel: <a href="https://arxiv.org/pdf/1803.08960.pdf">Introduction to Cluster algebras</a>. </li>
-                    <li>Fomin-Williams-Zelevinsky: <a href="https://people.math.harvard.edu/~williams/book.html">Introduction to Cluster Algebras.</a></li>
-                    <br>
-                    <li>Schiffler:  <a href="https://webusers.imj-prg.fr/~patrick.le-meur/CIMPA/Course-Schiffler.pdf">Cluster Algebras from Surfaces.</a>* Chapters 1 -- 3.</li>
-                    <li>Claussen: <a href="https://arxiv.org/pdf/2005.02083.pdf">Expansion poset for polygon cluster algebras.</a> Chapters 2, 3.4--3.6, 11.1--11.2.</li>
-                    <li>Schiffler: <a href="https://arxiv.org/abs/math/0611956">A cluster expansion formula.</a>* (Do NOT read yet. This is the solution to one of the exercises.)</li>
-                    <br>
-                    <li>Fock-Goncharov: <a href="https://arxiv.org/abs/math/0311149">Moduli spaces of local systems and higher Teichmuller theory.</a> (Our Project is based on this work, but you don't need to read and understand it at all.) </li>
-                    <li>Palski: <a href="https://hal.science/hal-01218570/document">Introduction to positive representations and Fock-Goncharov coordinates.</a> (This gives a simpler exposition of the above Fock-Goncharov paper, still not required, but ambitious students may try to read it.)</li>
-                </ul>
-
-                </p>
+          
+            
             <div class="line"></div>
-            <h5>Other Information.</h5>
-            <ul>
-                
-                <li><a href="Pace 2023 Schedule week 1-2.pdf">Schedule</a> of the first two weeks.</li>
-                
-            </ul>
+            <h5>Other Information.</h5>   
 
             <div class="line"></div>
 
-             <!-- <a href="https://www-users.cse.umn.edu/~reiner/combinatorics_group.html">Combinatorics Group</a> | <a href="https://cse.umn.edu/math"> School of Mathematics</a> | <a href="https://twin-cities.umn.edu/">University of Minnesota</a>
-            <div class="line"></div>
-            <p style="color:#999; font-size: 10px;">&copy; Wenze Zhang. All rights reserved.<br> The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.</p> -->
-        </div>
-    </div>
+        </div><!-- content -->
+    </div><!-- wrapper -->
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -149,6 +193,16 @@
           }
           prevScrollpos = currentScrollPos;
         }
+    </script>
+   
+
+
+    <script>
+        $(function() {
+            $('#toggle-event').change(function() {
+                document.body.className = $(this).data($(this).prop("checked").toString());
+            });   
+            });
     </script>
 </body>
 
